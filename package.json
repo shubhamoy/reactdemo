@@ -1,0 +1,27 @@
+{
+  "name": "reactdemo",
+  "version": "1.0.0",
+  "description": "ReacrJS Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -p && node index.js"
+  },
+  "keywords": [
+    "webpack2", "reactjs", "es6", "babel"
+  ],
+  "author": "Shubhamoy Chakrabarty <me@shubhamoy.com> (http://shubhamoy.com)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "express": "^4.14.1",
+    "path": "^0.12.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1"
+  }
+}
