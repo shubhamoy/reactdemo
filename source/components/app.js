@@ -21,10 +21,7 @@ export default class App extends React.Component {
   }
     
   onClick(e) {
-/*
-    //e.preventDefault();
-    console.log("  hello  ");
-*/
+
   }
 
   render() {
@@ -61,13 +58,3 @@ export default class App extends React.Component {
           </div>;
   }
 }
-
-//, document.getElementById('page-top'));
-/*
-            <Header title={this.props.title} />
-            <Nav onClick={this.onClick} data={this.props.data.nav} title={this.props.title} />
-            <Portfolio data={this.props.data.portfolio} />
-            <About />
-            <Contact />
-*/
-        /* children.push(<View key={key} data={model} />); */

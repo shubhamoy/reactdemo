@@ -87,8 +87,3 @@ export default class Footer extends React.Component {
     </footer>;
   }
 }
-
-/* <FooterText title={f1.title} content={f1.content} /> */
-// children: React.PropTypes.element.isRequired
-//Static Property
-/* FooterText.version = "1.0.1"; */
