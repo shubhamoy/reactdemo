@@ -5,10 +5,10 @@ class LinkElem extends React.Component {
     return {
       className: "page-scroll"
     };
-  }  
+  }
   render() {
     return <li className={this.props.className}>
-             <a onClick={this.props.onClick} 
+             <a onClick={this.props.onClick}
                 href={this.props.link}>
                 {this.props.name}
              </a>

@@ -7,10 +7,10 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
-    
+
     this.map = new Map();
     this.map.set('footer', Footer);
-    
+
     this.state = {section : location.hash};
 
     window.onhashchange = (e) => {
@@ -19,22 +19,20 @@ export default class App extends React.Component {
       }
     }
   }
-    
-  onClick(e) {
 
-  }
+  onClick(e) {}
 
   render() {
     let children = [],
         navModel = [];
     for(let key in this.props.data) {
       let View = this.props.data[key].view,
-          {label, model} = this.props.data[key];
-      
+        {label, model} = this.props.data[key];
+
       if(!View && this.map.has(key)) {
         View = this.map.get(key);
       }
-      
+
       if(View) {
         if(label) {
           this.map.set("#"+key, View);
@@ -42,7 +40,7 @@ export default class App extends React.Component {
           navModel.push({link:"#"+key, name:label});
         }
       }
-      
+
       if(this.map.has(this.state.section)) {
         const Tag = this.map.get(this.state.section);
         children = [<Tag key={this.state.section} data={this.map.get(Tag)} />];

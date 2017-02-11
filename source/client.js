@@ -10,7 +10,7 @@ import Contact from "./components/contact";
 
 console.clear();
 
-$(function(){ 
+$(function(){
   var navMain = $("#bs-example-navbar-collapse-1");
   navMain.on("click", "a", null, function () {
     navMain.collapse('hide');
@@ -42,7 +42,7 @@ let footerModel = [
         {link: "https://twitter.com", social:"twitter"},
         {link: "https://linkedin.com/in/shubhamoy", social:"linkedin"}
       ]},
-      {title: "About Me", 
+      {title: "About Me",
        content: "Shubhamoy loves to experiment with new technologies. Presently he's working with ReactJS :)"}
 ];
 
@@ -54,6 +54,6 @@ let mv = {
   footer: {model: footerModel}
 }
 
-ReactDOM.render(<App data={mv} 
+ReactDOM.render(<App data={mv}
                      ntitle={navTitle}
                      owner={siteOwner} />, document.getElementById('page-top'));

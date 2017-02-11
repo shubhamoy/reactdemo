@@ -4,11 +4,11 @@ import Section from "./section";
 class PortfolioItem extends React.Component  {
   constructor(props) {
     super(props);
-    
+
     this.state = {hasImage: true};
     this.onImageStateChange = this.onImageStateChange.bind(this);
   }
-  
+
   onImageStateChange(e) {
     this.setState({
       hasImage: false
