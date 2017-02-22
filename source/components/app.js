@@ -48,7 +48,6 @@ export default class App extends React.Component {
         children = [<Header key={key} data={this.props.data.header.model} />];
       }
     }
-    console.log();
     return <div>
             <Nav onClick={this.onClick} data={navModel} ntitle={this.props.ntitle} />    
             {children}
